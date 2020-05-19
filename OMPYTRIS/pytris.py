@@ -604,7 +604,7 @@ while not done:
                         #else:
                            # pygame.time.set_timer(pygame.USEREVENT, framerate * 20)/*
                         #if pressed[pygame.K_RIGHT]:   
-                        pygame.time.set_timer(pygame.KEYUP, framerate * 3)           
+                        pygame.time.set_timer(pygame.KEYDOWN, framerate * 3)           
                         dx += 1
                     draw_mino(dx, dy, mino, rotation)
                     draw_board(next_mino, hold_mino, score, level, goal)
