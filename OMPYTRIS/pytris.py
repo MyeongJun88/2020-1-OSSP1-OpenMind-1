@@ -590,7 +590,7 @@ while not done:
                     if not is_leftedge(dx, dy, mino, rotation):
                         ui_variables.move_sound.play()
                         keys_pressed = pygame.key.get_pressed()
-                        pygame.time.set_timer(pygame.KEYUP, framerate * 3)
+                        pygame.time.set_timer(pygame.KEYDOWN, framerate * 3)
                         dx -= 1
                     draw_mino(dx, dy, mino, rotation)
                     draw_board(next_mino, hold_mino, score, level, goal)
